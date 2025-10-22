@@ -7,13 +7,7 @@ All metadata of the GESIS Search corpus with documents for the categories resear
 
 This module includes a Jupyter notebook for training topic models for our corpus and producing artifacts (topic-term tables, document-topic distributions, etc.).
 
-1) Install deps:
-
-`pip install "bertopic[all]" sentence-transformers pandas`
-
-
-2) Prepare data
-
+#### Prepare data
 Create a CSV file (e.g., `queries.csv`) with a single text column:
 
 <pre>csv 
