@@ -1,0 +1,12 @@
+All metadata is provided by GESIS - Leibniz-Institute for the Social Sciences (https://www.gesis.org) and can be found in GESIS Search (https://search.gesis.org) as well as in the GESIS Knowledge Graph (https://data.gesis.org/gesiskg). 
+Metadata is generally freely available under different license models. GESIS requests that you actively acknowledge and give attribution to all metadata sources, such as the data providers and any data aggregators, including GESIS. 
+
+See further licensing details: 
+- for research data and variables from the GESIS Data Archive under https://search.gesis.org/faq -> Can I re-use metadata from the category "Research Data"? with a Creative Commons CC0 1.0 Universal Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/)
+- for research data, variables and instruments from GESIS MISSY under https://www.gesis.org/en/missy/general-information with a Creative Commons License (https://creativecommons.org/licenses/by-nc/4.0/)
+- for GESIS Guides instruments here https://www.gesis.org/en/gesis-guides
+- for GESIS Methods Hub instruments here https://methodshub.gesis.org/terms-of-use/view/use/
+- for GESIS PRETEST instruments under https://pretest.gesis.org/view/aboutus?lang=de with a CC-BY licence (https://creativecommons.org/licenses/by/4.0/)
+- for GESIS ZIS instruments under https://zis.gesis.org/licensing?lang=de with a CC-BY license (https://creativecommons.org/licenses/by/4.0/)
+- for GESIS SSOAR publications under https://www.gesis.org/en/ssoar/guidelines with a CC0 licence 
+- for the GESIS Knowledge Graph as a collection of all resources under a Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
