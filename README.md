@@ -21,7 +21,7 @@ text
 </pre>
 
 
-## What the pipeline does
+#### What the pipeline does
 - Embeds queries with sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Fits BERTopic to discover clusters/themes
 - (Optional) Reduces/merges small/overlapping topics
