@@ -1,0 +1,216 @@
+topic_cluster	topic_cluster_name	query_id	query	item_type	language
+3	work	55428	arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	55053	arbeit zufriedenheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	54995	arbeitgeber	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	55130	arbeitsbedingungen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	55226	arbeitsbelastung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	56202	arbeitsbelastungen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	56089	arbeitsleistung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	3125	arbeitslosigkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	57703	arbeitsweg	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	3474	arbeitszeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	2160	beruf	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	53827	berufsabschluss	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	53774	berufsausbildung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	54808	berufsprestige	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	54621	beschäftigungsverhältnis	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	46134	care arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	15721	job	['publication', 'research_data', 'instruments_tools', 'variables']	en
+3	work	15758	job satisfaction	['publication', 'research_data', 'instruments_tools', 'variables']	en
+3	work	15640	karriere	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	18263	mitarbeiter	['publication', 'research_data', 'instruments_tools', 'variables']	de
+3	work	30368	work	['publication', 'research_data', 'instruments_tools', 'variables']	en
+3	work	29262	zufriedenheit arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	3420	left right	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	21846	links rechts	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	21879	links rechts skala	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	21895	linksrechts	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	21585	linksrechtsskala	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	10418	politic	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	9243	political efficacy	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	9169	political interest	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	3247	political orientation	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	3307	political participation	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	9089	political trust	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	9035	politics	['publication', 'research_data', 'instruments_tools', 'variables']	en
+4	politics	10109	politik	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	9616	politikverdrossenheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	6499	politische bildung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	2386	politische einstellung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	8951	politische einstellungen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	2662	politische orientierung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	6616	politische partizipation	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	8382	politische werte	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	8246	politisches engagement	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	1112	politisches interesse	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	5830	politisches wissen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	33461	rechts links	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	34145	rechtsextremismus	['publication', 'research_data', 'instruments_tools', 'variables']	de
+4	politics	34932	rightwing	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	67543	flüchtling	['publication', 'research_data', 'instruments_tools', 'variables']	de
+5	migration	100	immigrant	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	221	immigration	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	19136	migra	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	18995	migrant	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	18589	migranten	['publication', 'research_data', 'instruments_tools', 'variables']	de
+5	migration	427	migration	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	4027	migrationshintergrund	['publication', 'research_data', 'instruments_tools', 'variables']	de
+5	migration	6086	refugee	['publication', 'research_data', 'instruments_tools', 'variables']	en
+5	migration	6092	refugees	['publication', 'research_data', 'instruments_tools', 'variables']	en
+6	environment	79	environment	['publication', 'research_data', 'instruments_tools', 'variables']	en
+6	environment	66195	environmental	['publication', 'research_data', 'instruments_tools', 'variables']	en
+6	environment	828	nachhaltigkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+6	environment	6854	natur	['publication', 'research_data', 'instruments_tools', 'variables']	de
+6	environment	36787	sustainability	['publication', 'research_data', 'instruments_tools', 'variables']	en
+6	environment	230	umweltbewusstsein	['publication', 'research_data', 'instruments_tools', 'variables']	de
+6	environment	24946	umweltschutz	['publication', 'research_data', 'instruments_tools', 'variables']	de
+8	social media	4835	media	['publication', 'research_data', 'instruments_tools', 'variables']	en
+8	social media	22708	media use	['publication', 'research_data', 'instruments_tools', 'variables']	en
+8	social media	5407	medien	['publication', 'research_data', 'instruments_tools', 'variables']	de
+8	social media	23614	medien nutzung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+8	social media	22951	medienkonsum	['publication', 'research_data', 'instruments_tools', 'variables']	de
+8	social media	1817	mediennutzung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+8	social media	1537	social media	['publication', 'research_data', 'instruments_tools', 'variables']	en
+8	social media	5335	social media nutzung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+8	social media	5377	social media use	['publication', 'research_data', 'instruments_tools', 'variables']	en
+8	social media	41495	soziale medien	['publication', 'research_data', 'instruments_tools', 'variables']	de
+9	corona	928	corona	['publication', 'research_data', 'instruments_tools', 'variables']	en
+9	corona	43910	covid	['publication', 'research_data', 'instruments_tools', 'variables']	en
+9	corona	43698	covid19	['publication', 'research_data', 'instruments_tools', 'variables']	en
+13	social desirability	3294	haushaltseinkommen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	38053	social status	['publication', 'research_data', 'instruments_tools', 'variables']	en
+13	social desirability	38133	sozial	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	40249	soziale herkunft	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	40541	soziale kompetenzen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	40505	soziale kontakte	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	40380	soziale lage	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	41546	soziale netzwerke	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	39506	sozialisation	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	39449	sozialleistungen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+13	social desirability	6719	welfare	['publication', 'research_data', 'instruments_tools', 'variables']	en
+13	social desirability	5736	wohlfahrtsstaat	['publication', 'research_data', 'instruments_tools', 'variables']	de
+16	gender	3938	gender	['publication', 'research_data', 'instruments_tools', 'variables']	en
+16	gender	61734	gender role	['publication', 'research_data', 'instruments_tools', 'variables']	en
+16	gender	61686	gender role attitudes	['publication', 'research_data', 'instruments_tools', 'variables']	en
+16	gender	61761	gender roles	['publication', 'research_data', 'instruments_tools', 'variables']	en
+16	gender	61531	geschlecht und geschlechterrollen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+16	gender	59281	geschlechterrolle	['publication', 'research_data', 'instruments_tools', 'variables']	de
+16	gender	59288	geschlechterrollen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+17	digitization	50072	digital	['publication', 'research_data', 'instruments_tools', 'variables']	en
+17	digitization	50270	digital skills	['publication', 'research_data', 'instruments_tools', 'variables']	en
+17	digitization	50581	digitalisierung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+17	digitization	50992	digitalisierung arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+17	digitization	49615	digitalization	['publication', 'research_data', 'instruments_tools', 'variables']	en
+18	religion	1156	religion	['publication', 'research_data', 'instruments_tools', 'variables']	en
+18	religion	6213	religionszugehörigkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+18	religion	1552	religiosität	['publication', 'research_data', 'instruments_tools', 'variables']	de
+19	racism and Xenophobia	56749	antisemitism	['publication', 'research_data', 'instruments_tools', 'variables']	en
+19	racism and Xenophobia	3147	antisemitismus	['publication', 'research_data', 'instruments_tools', 'variables']	de
+19	racism and Xenophobia	57292	ausländer	['publication', 'research_data', 'instruments_tools', 'variables']	de
+19	racism and Xenophobia	2884	fremdenfeindlichkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+19	racism and Xenophobia	63419	islam	['publication', 'research_data', 'instruments_tools', 'variables']	en
+19	racism and Xenophobia	20168	muslime	['publication', 'research_data', 'instruments_tools', 'variables']	de
+19	racism and Xenophobia	1670	rassismus	['publication', 'research_data', 'instruments_tools', 'variables']	de
+20	climate change	45793	climate	['publication', 'research_data', 'instruments_tools', 'variables']	en
+20	climate change	81	climate change	['publication', 'research_data', 'instruments_tools', 'variables']	en
+20	climate change	45770	climate change attitudes	['publication', 'research_data', 'instruments_tools', 'variables']	en
+20	climate change	6322	klima	['publication', 'research_data', 'instruments_tools', 'variables']	de
+20	climate change	16523	klimaschutz	['publication', 'research_data', 'instruments_tools', 'variables']	de
+20	climate change	6370	klimawandel	['publication', 'research_data', 'instruments_tools', 'variables']	de
+22	social inequality	52895	inequality	['publication', 'research_data', 'instruments_tools', 'variables']	en
+22	social inequality	4034	soziale ungleichheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+22	social inequality	23986	ungleichheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+24	satisfaction	2911	happiness	['publication', 'research_data', 'instruments_tools', 'variables']	en
+24	satisfaction	1743	lebenszufriedenheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+24	satisfaction	2945	life satisfaction	['publication', 'research_data', 'instruments_tools', 'variables']	en
+24	satisfaction	29421	zufriedenheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+24	satisfaction	29207	zufriedenheit ausbildung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+25	crime	2585	kriminalität	['publication', 'research_data', 'instruments_tools', 'variables']	de
+25	crime	6534	kriminalitätsfurcht	['publication', 'research_data', 'instruments_tools', 'variables']	de
+26	motivation	21196	motivation	['publication', 'research_data', 'instruments_tools', 'variables']	en
+27	health	4690	gesundheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+27	health	58596	gesundheit arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+27	health	58154	gesundheitszustand	['publication', 'research_data', 'instruments_tools', 'variables']	de
+27	health	3148	health	['publication', 'research_data', 'instruments_tools', 'variables']	en
+30	violence and sexual abuse	4600	gewalt	['publication', 'research_data', 'instruments_tools', 'variables']	de
+30	violence and sexual abuse	2500	violence	['publication', 'research_data', 'instruments_tools', 'variables']	en
+32	sexuality	6501	homosexualität	['publication', 'research_data', 'instruments_tools', 'variables']	de
+32	sexuality	3340	sex	['publication', 'research_data', 'instruments_tools', 'variables']	en
+32	sexuality	32407	sexual	['publication', 'research_data', 'instruments_tools', 'variables']	en
+32	sexuality	32087	sexualität	['publication', 'research_data', 'instruments_tools', 'variables']	de
+32	sexuality	1259	sexuelle orientierung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+34	stress	4160	stress	['publication', 'research_data', 'instruments_tools', 'variables']	en
+34	stress	4182	stress am arbeitsplatz	['publication', 'research_data', 'instruments_tools', 'variables']	de
+34	stress	37090	stress arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+34	stress	4472	stress work	['publication', 'research_data', 'instruments_tools', 'variables']	en
+35	education	810	bildungsgrad	['publication', 'research_data', 'instruments_tools', 'variables']	de
+35	education	1851	education	['publication', 'research_data', 'instruments_tools', 'variables']	en
+35	education	6177	erziehung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+35	education	65758	hochschule	['publication', 'research_data', 'instruments_tools', 'variables']	de
+35	education	31054	schule	['publication', 'research_data', 'instruments_tools', 'variables']	de
+35	education	3297	schulische bildung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+36	trust	1825	glaubwürdigkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+36	trust	729	trust	['publication', 'research_data', 'instruments_tools', 'variables']	en
+36	trust	1719	vertrauen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+37	self-efficacy	32820	selbstdarstellung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+37	self-efficacy	33371	selbstverwirklichung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+37	self-efficacy	33259	selbstwirksamkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+38	youth	15423	jugendliche	['publication', 'research_data', 'instruments_tools', 'variables']	de
+41	family	5274	familie	['publication', 'research_data', 'instruments_tools', 'variables']	de
+41	family	67689	family	['publication', 'research_data', 'instruments_tools', 'variables']	en
+42	mental health	7422	psychische	['publication', 'research_data', 'instruments_tools', 'variables']	de
+42	mental health	7488	psychische belastung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+42	mental health	7445	psychische erkrankungen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+42	mental health	974	psychische gesundheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+42	mental health	7939	psychologie	['publication', 'research_data', 'instruments_tools', 'variables']	de
+42	mental health	6763	psychotherapie	['publication', 'research_data', 'instruments_tools', 'variables']	en
+43	abortion	6267	abtreibung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+44	generation z	62491	generation	['publication', 'research_data', 'instruments_tools', 'variables']	en
+44	generation z	62289	generation y	['publication', 'research_data', 'instruments_tools', 'variables']	en
+44	generation z	3856	generationen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+44	generation z	31126	schichtarbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+45	drugs	3365	drogen	['publication', 'research_data', 'instruments_tools', 'variables']	de
+45	drugs	47291	drug	['publication', 'research_data', 'instruments_tools', 'variables']	en
+45	drugs	3107	drugs	['publication', 'research_data', 'instruments_tools', 'variables']	en
+46	child poverty and chilcare	17057	kinderbetreuung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+46	child poverty and chilcare	17717	kinderwunsch	['publication', 'research_data', 'instruments_tools', 'variables']	de
+47	democracy	5275	democracy	['publication', 'research_data', 'instruments_tools', 'variables']	en
+47	democracy	1326	demokratie	['publication', 'research_data', 'instruments_tools', 'variables']	de
+50	security	31794	safety	['publication', 'research_data', 'instruments_tools', 'variables']	en
+50	security	32984	security	['publication', 'research_data', 'instruments_tools', 'variables']	en
+50	security	32738	sicherheit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+50	security	5065	sicherheitsempfinden	['publication', 'research_data', 'instruments_tools', 'variables']	de
+50	security	5030	sicherheitsgefühl	['publication', 'research_data', 'instruments_tools', 'variables']	de
+52	personality	12604	personal	['publication', 'research_data', 'instruments_tools', 'variables']	en
+52	personality	11910	persönlichkeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+52	personality	12195	persönlichkeitsmerkmale	['publication', 'research_data', 'instruments_tools', 'variables']	de
+53	consumption	43444	consumer	['publication', 'research_data', 'instruments_tools', 'variables']	en
+53	consumption	14255	konsum	['publication', 'research_data', 'instruments_tools', 'variables']	de
+54	mobility	20775	mobilität	['publication', 'research_data', 'instruments_tools', 'variables']	de
+54	mobility	38113	social mobility	['publication', 'research_data', 'instruments_tools', 'variables']	en
+54	mobility	41655	soziale mobilität	['publication', 'research_data', 'instruments_tools', 'variables']	de
+54	mobility	26363	verkehrsmittel	['publication', 'research_data', 'instruments_tools', 'variables']	de
+56	leadership	61312	führung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+56	leadership	61220	führungskraft	['publication', 'research_data', 'instruments_tools', 'variables']	de
+56	leadership	60915	führungskräfte	['publication', 'research_data', 'instruments_tools', 'variables']	de
+56	leadership	60378	führungsstil	['publication', 'research_data', 'instruments_tools', 'variables']	de
+58	sport	2741	sport	['publication', 'research_data', 'instruments_tools', 'variables']	en
+59	homeoffice	6481	home office	['publication', 'research_data', 'instruments_tools', 'variables']	en
+59	homeoffice	317	homeoffice	['publication', 'research_data', 'instruments_tools', 'variables']	en
+61	discrimination	505	diskriminierung	['publication', 'research_data', 'instruments_tools', 'variables']	de
+63	culture	44361	culture	['publication', 'research_data', 'instruments_tools', 'variables']	en
+63	culture	13621	kultur	['publication', 'research_data', 'instruments_tools', 'variables']	de
+64	alcohol	1293	alcohol	['publication', 'research_data', 'instruments_tools', 'variables']	en
+64	alcohol	51730	alkohol	['publication', 'research_data', 'instruments_tools', 'variables']	de
+64	alcohol	52781	alkoholkonsum	['publication', 'research_data', 'instruments_tools', 'variables']	de
+66	populism	5843	populism	['publication', 'research_data', 'instruments_tools', 'variables']	en
+66	populism	2817	populismus	['publication', 'research_data', 'instruments_tools', 'variables']	de
+67	ukraine	4811	ukraine	['publication', 'research_data', 'instruments_tools', 'variables']	en
+68	turkey	718	turkey	['publication', 'research_data', 'instruments_tools', 'variables']	en
+70	work life balance	2272	work life balance	['publication', 'research_data', 'instruments_tools', 'variables']	en
+70	work life balance	28676	worklife	['publication', 'research_data', 'instruments_tools', 'variables']	en
+70	work life balance	28540	worklife balance	['publication', 'research_data', 'instruments_tools', 'variables']	en
+70	work life balance	6346	worklifebalance	['publication', 'research_data', 'instruments_tools', 'variables']	en
+72	social work	40674	soziale arbeit	['publication', 'research_data', 'instruments_tools', 'variables']	de
+74	depression	1635	depression	['publication', 'research_data', 'instruments_tools', 'variables']	en
+78	technology	26823	technology	['publication', 'research_data', 'instruments_tools', 'variables']	en
