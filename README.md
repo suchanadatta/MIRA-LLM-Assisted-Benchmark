@@ -50,7 +50,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 
 #### LLM-assisted Topic Curation
 - We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
-- For each topic, we provide LLM with top-scored 20 abstracts  (via GESIS search system) to generate the corresponding description and narration.
+- For each topic, we provide LLM with top-scored 20 abstracts (obtained from GESIS search system) to generate the corresponding [description and narration](models/generate_query_narration.py).
 - We used the following prompts.
  <pre> 
 	|----------------------------------------------------------------------------------------------| 
@@ -69,7 +69,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 	|             | examples, and possible edge cases.                                             |
 	|----------------------------------------------------------------------------------------------|
 </pre>
-- We create a structured representation including the original query and a full description along with a detailed narration, which are distinct for each category following the standard TREC format. A sample query is given below.
+- We create a [structured representation](models/make_query_trec_format.py) including the original query and a full description along with a detailed narration, which are distinct for each category following the standard TREC format. A sample query is given below.
   
 ```xml
 <top>
