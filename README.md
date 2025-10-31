@@ -5,7 +5,7 @@ The modern search experience is integrated, yet IR benchmarks have lagged behind
 MIRA dataset directly confronts this challenge by providing a unified framework encompassing four distinct scholarly categories - `Publications`, `Research Data`, `Variables` and `Instruments & Tools` - all grounded in real user queries from the GESIS Search platform.
 
 ## Metadata Export
-The collection contains metadata on 7,634 research datasets, 206,434 high-quality metadata variables, 604 instruments & tools, and 254,097 publications with a total of 468,769 documents, provided as a set of JSON files.
+The collection contains metadata on `7,634` research datasets; `206,434` high-quality metadata variables; `604` instruments & tools; and `254,097` publications with a total of `468,769` documents, provided as a set of JSON files.
 
 - **Metadata** : Download [metadata](https://drive.google.com/file/d/1jTTYd83bYTqeMB2DR4DSOWQQuYl4y_Sa/view?usp=drive_link) here.
    
@@ -15,7 +15,7 @@ The collection contains metadata on 7,634 research datasets, 206,434 high-qualit
 
 ## Topic Modeling
 
-The initial pool of multi-category topics contained significant semantic overlap, as users frequently expressed core information needs through multiple query variants. Therefore, to group these variations, we performed topic modeling on the 412,032 pre-selected topics using **BERTopic** and ended up with 215 potential topics.
+The initial pool of multi-category topics contained significant semantic overlap, as users frequently expressed core information needs through multiple query variants. Therefore, to group these variations, we performed topic modeling on the `412,032` pre-selected topics using `BERTopic` and ended up with `215` potential topics.
 [Topic Modeling](topic_modelling) includes a Jupyter notebook that trains topic models for our corpus and produce artifacts (e.g. topic-term tables, document-topic distributions, etc.).
 
 #### Prepare data
@@ -46,7 +46,7 @@ Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived fro
 
 ## Topics
 
-MIRA topics originate from real user queries submitted to the GESIS Search platform. We used user logs collected between 2017 and 2024, comprising 16,335,937 interactions. After filtering via topic modeling, we select 215 potential queries covering 4 categories. More details in the paper.
+MIRA topics originate from real user queries submitted to the GESIS Search platform. We used user logs collected between `2017 and 2024`, comprising `16,335,937` interactions. After filtering via topic modeling, we select `215` potential queries covering 4 categories. More details in the paper.
 
 #### LLM-assisted Topic Curation
 - We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
@@ -117,5 +117,5 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 
 ## Evaluation
 
-A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as P@100, nDCG@100, and Recall@100. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
+A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as `P@100`, `nDCG@100`, and `Recall@100`. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
 
