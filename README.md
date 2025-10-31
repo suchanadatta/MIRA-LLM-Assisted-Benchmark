@@ -69,7 +69,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 	|             | examples, and possible edge cases.                                             |
 	|----------------------------------------------------------------------------------------------|
 </pre>
-- We create a [structured representation](models/make_query_trec_format.py) including the original query and a full description along with a detailed narration, which are distinct for each category following the standard TREC format. A sample query is given below.
+- We create a [structured representation](models/make_query_trec_format.py) including the original topic and a full description along with a detailed narration of the final [215 topics](query_qrel/query.xml), which are distinct for each category following the standard TREC format. A sample query is given below.
   
 ```xml
 <top>
@@ -95,7 +95,15 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 ```
 
 ## LLM-assisted Relevance Judgements
-
+- For each of the 215 selected topics, we identified a pool of candidate documents to be judged.
+- We select documents from all four categories that received a `view_record` or `download` or `export` user interaction after the query was issued in the GESIS Search.
+- We used `gpt-5-mini` to judge those documents.
+- Judgments were made on a graded relevance scale from '0' to '4'.
+  -- `0` --> Not Relevant,
+  -- `1` --> Marginally Relevant,
+  -- `2` --> Fairly Relevant,
+  -- `3` --> Highly Relevant, and
+  -- `4` --> Perfectly Relevant
 - We used the following prompt.
 <pre>
 	"You are a helpful assistant doing graded relevance assessment. Decide whether the given
