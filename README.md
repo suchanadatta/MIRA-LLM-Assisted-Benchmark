@@ -46,4 +46,17 @@ Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived fro
 
 ## Topics
 
-<pre> ```xml <book> <title>Information Retrieval</title> <author>C. Manning</author> <year>2008</year> </book> ``` </pre>
+```xml
+<library>
+  <book id="1">
+    <title>Information Retrieval</title>
+    <author>C. Manning</author>
+    <year>2008</year>
+  </book>
+  <book id="2">
+    <title>Modern Information Retrieval</title>
+    <author>R. Baeza-Yates</author>
+    <year>2011</year>
+  </book>
+</library>
+```
