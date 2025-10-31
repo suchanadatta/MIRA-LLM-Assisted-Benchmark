@@ -98,7 +98,9 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 
 - We used the following prompt.
 <pre>
-	You are a helpful assistant doing graded relevance assessment. Decide whether the given abstract is relevant to the keyword query. On a scale of 0 to 4, score the document where 0 indicates non-relevant and 4 being the highly relevant.
+	You are a helpful assistant doing graded relevance assessment. Decide whether the given
+	abstract is relevant to the keyword query. On a scale of 0 to 4, score the document where 
+	`0` indicates non-relevant and `4` being the highly relevant.
 </pre>
 
 ## Evaluation
