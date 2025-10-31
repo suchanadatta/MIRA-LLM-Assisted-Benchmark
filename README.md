@@ -40,7 +40,7 @@ text
 - Saves the model for reuse
 - Creates a wordcloud based on topic frequencies
 
-Word cloud of the top 50 topics derived from topic modeling is as follows.
+Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived from topic modeling is as follows.
 
 <img src="topic_modelling/top50_topics_wordcloud.png" alt="word-cloud" width="500"/>
 
