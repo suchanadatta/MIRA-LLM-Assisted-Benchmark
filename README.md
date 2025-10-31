@@ -11,7 +11,7 @@ All metadata of the GESIS Search corpus with documents for the categories resear
    
 - **Lucene Index** : The [Lucene (version 8)](https://drive.google.com/file/d/1i8U389G4wSj7dMz41xehKQvvBryZuIs-/view?usp=drive_link) index of the metadata can be accessed here.
   
-- **Licence** : Check out the [licence information](metadata-corpus/license.txt) here.
+- **Licence** : Check out the [licence information](license.txt) here.
 
 ## Topic Modelling
 
