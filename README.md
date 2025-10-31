@@ -104,12 +104,16 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
   - `2` → Fairly Relevant,
   - `3` → Highly Relevant, and
   - `4` → Perfectly Relevant
-- We used the following prompt.
+- We provided LLM with the `topic description` and the `document metadata`, instructing it to assess their relevance.
+- We used the following [prompt](models/create_qrel_file.py) while assessing the documents by the LLM.
 <pre>
 	"You are a helpful assistant doing graded relevance assessment. Decide whether the given
 	abstract is relevant to the keyword query. On a scale of 0 to 4, score the document where 
 	'0' indicates non-relevant and '4' being the highly relevant."
 </pre>
+- Each judgment has 4 attributes - `topic_id`, `document_id`, `document_category`, `relevance_score`.
+- We finally obtain a pool of `43,803` LLM-annotated [relevance judgments](query_qrel/qrels.tsv).
+- A randomly chosen `40% sample` of the annotations were validated by human annotators.
 
 ## Evaluation
 
