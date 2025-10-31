@@ -13,9 +13,10 @@ All metadata of the GESIS Search corpus with documents for the categories resear
   
 - **Licence** : Check out the [licence information](license.txt) here.
 
-## Topic Modelling
+## Topic Modeling
 
-This module includes a Jupyter notebook for training topic models for our corpus and producing artifacts (topic-term tables, document-topic distributions, etc.).
+The initial pool of multi-category topics contained significant semantic overlap, as users frequently expressed core information needs through multiple query variants. Therefore, to group these variations, we performed topic modeling on the 412,032 pre-selected topics using **BERTopic** and ended up with 215 potential topics.
+[Topic Modeling](topic_modelling) includes a Jupyter notebook that trains topic models for our corpus and produce artifacts (e.g. topic-term tables, document-topic distributions, etc.).
 
 #### Prepare data
 Create a CSV file (e.g., `queries.csv`) with a single text column:
