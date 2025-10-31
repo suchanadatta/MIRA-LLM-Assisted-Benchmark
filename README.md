@@ -80,9 +80,13 @@ For each resulting topic, we create a structured representation including the or
 - For each topic, we provide LLM with top-scored 20 abstracts  (via GESIS search system) to generate the corresponding description and narration.
 - We used the following prompts.
 <pre>
-	| Type | Prompt |
-	|------|--------|
-	| Description | You are a helpful assistant generating description for keyword queries. Write a short description (1–2 sentences) of the query in English. This should summarize the information need clearly and concisely. An information need is the underlying motivation or purpose that drives a person to seek information — it represents the gap between what someone knows and what they want or need to know in order to accomplish a goal.
+	| Type        | Prompt                                                                               |
+	|-------------|--------------------------------------------------------------------------------------|
+	| Description | You are a helpful assistant generating description for keyword queries. <br>
+	Write a short description (1–2 sentences) of the query in English. This should summarize<br>
+	the information need clearly and concisely. An information need is the underlying motivation<br>
+	or purpose that drives a person to seek information — it represents the gap between what someone<br> 
+	knows and what they want or need to know in order to accomplish a goal. |
 </pre>
 
 
