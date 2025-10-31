@@ -6,9 +6,12 @@ MIRA dataset directly confronts this challenge by providing a unified framework 
 
 ## Metadata Export
 All metadata of the GESIS Search corpus with documents for the categories research datasets, variables, instruments & tools, and publications are available in JSON format.
--- **Metadata** : [MIRA collection](https://drive.google.com/file/d/1jTTYd83bYTqeMB2DR4DSOWQQuYl4y_Sa/view?usp=drive_link) 
--- **Lucene Index** : The [Lucene (version 8)](https://drive.google.com/file/d/1i8U389G4wSj7dMz41xehKQvvBryZuIs-/view?usp=drive_link) index of the metadata can be accessed here.
--- **Licence** : Check out the [licence information](metadata-corpus/license.txt) here.
+
+- **Metadata** : [MIRA collection](https://drive.google.com/file/d/1jTTYd83bYTqeMB2DR4DSOWQQuYl4y_Sa/view?usp=drive_link)
+   
+- **Lucene Index** : The [Lucene (version 8)](https://drive.google.com/file/d/1i8U389G4wSj7dMz41xehKQvvBryZuIs-/view?usp=drive_link) index of the metadata can be accessed here.
+  
+- **Licence** : Check out the [licence information](metadata-corpus/license.txt) here.
 
 ## Topic Modelling
 
