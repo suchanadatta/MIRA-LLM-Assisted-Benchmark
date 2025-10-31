@@ -1,4 +1,4 @@
-# MIRA-An-LLM-Assisted-Benchmark-for-Multi-Category-Integrated-Retrieval
+# MIRA - An LLM-Assisted Benchmark for Multi-Category Integrated Retrieval
 
 **MIRA** dataset, a novel test collection designed to address the critical evaluation gap in multi-categorical information retrieval.
 The modern search experience is integrated, yet IR benchmarks have lagged behind, constrained by a lack of collections that mirror this reality.
