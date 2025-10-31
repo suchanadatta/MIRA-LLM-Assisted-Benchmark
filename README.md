@@ -99,11 +99,11 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 - We select documents from all four categories that received a `view_record` or `download` or `export` user interaction after the query was issued in the GESIS Search.
 - We used `gpt-5-mini` to judge those documents.
 - Judgments were made on a graded relevance scale from '0' to '4'.
-  - `0` --> Not Relevant,
-  - `1` --> Marginally Relevant,
-  - `2` --> Fairly Relevant,
-  - `3` --> Highly Relevant, and
-  - `4` --> Perfectly Relevant
+  - `0` -> Not Relevant,
+  - `1` -> Marginally Relevant,
+  - `2` -> Fairly Relevant,
+  - `3` -> Highly Relevant, and
+  - `4` -> Perfectly Relevant
 - We used the following prompt.
 <pre>
 	"You are a helpful assistant doing graded relevance assessment. Decide whether the given
