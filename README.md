@@ -5,7 +5,7 @@ The modern search experience is integrated, yet IR benchmarks have lagged behind
 MIRA dataset directly confronts this challenge by providing a unified framework encompassing four distinct scholarly categories -- **Publications**, **Research Data**, **Variables** and **Instruments & Tools** -- all grounded in real user queries from the GESIS Search platform.
 
 ## Metadata Export
-All metadata of the GESIS Search corpus with documents for the categories research datasets, variables, instruments & tools, and publications can be found in JSON format here [MIRA collection]([https://example.com](https://drive.google.com/drive/folders/1LWrIN-J7XltmUt11O5nKpjSyucbXZ3NN?usp=drive_link)). Note the [licence information](metadata-corpus/license.txt).
+All metadata of the GESIS Search corpus with documents for the categories research datasets, variables, instruments & tools, and publications can be found in JSON format here [MIRA collection](https://example.com](https://drive.google.com/drive/folders/1LWrIN-J7XltmUt11O5nKpjSyucbXZ3NN?usp=drive_link). Note the [licence information](metadata-corpus/license.txt).
 
 ## Topic Modelling
 
