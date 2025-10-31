@@ -80,6 +80,7 @@ For each resulting topic, we create a structured representation including the or
 - For each topic, we provide LLM with top-scored 20 abstracts  (via GESIS search system) to generate the corresponding description and narration.
 - We used the following prompts.
  <pre> 
+	|----------------------------------------------------------------------------------------------| 
 	| Type        | Prompt                                                                         |
  	|-------------|--------------------------------------------------------------------------------|
 	| Description | You are a helpful assistant generating description for keyword queries.        |
