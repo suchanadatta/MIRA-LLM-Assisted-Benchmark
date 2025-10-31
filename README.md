@@ -48,10 +48,29 @@ Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived fro
 
 MIRA topics originate from real user queries submitted to the GESIS Search platform. We used user logs collected between 2017 and 2024, comprising 16,335,937 interactions. After filtering via topic modeling, we select 215 potential queries covering 4 categories. More details in the paper.
 
-#### TREC-style topics
-
-For each resulting topic, we create a structured representation including the original query and a full description along with a detailed narration, which are distinct for each category following the standard TREC format. A sample query is given below.
-
+#### LLM-assisted Topic Curation
+- We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
+- For each topic, we provide LLM with top-scored 20 abstracts  (via GESIS search system) to generate the corresponding description and narration.
+- We used the following prompts.
+ <pre> 
+	|----------------------------------------------------------------------------------------------| 
+	| Type        | Prompt                                                                         |
+ 	|-------------|--------------------------------------------------------------------------------|
+	| Description | You are a helpful assistant generating description for keyword queries.        |
+	|             | Write a short description (1–2 sentences) of the query in English. This        |
+	|             | should summarize the information need clearly and concisely. An information    |
+	|             | need is the underlying motivation or purpose that drives a person to seek      |
+	|             | information — it represents the gap between what someone knows and what        |
+	|             | they want or need to know in order to accomplish a goal.                       |
+	|----------------------------------------------------------------------------------------------|
+	| Narration   | You are a helpful assistant generating narration for keyword queries. Write    |
+	|             | a English narrative in 4-5 sentences that explains what makes a document       |
+	|             | relevant or non-relevant for this query. The narrative should include details, |
+	|             | examples, and possible edge cases.                                             |
+	|----------------------------------------------------------------------------------------------|
+</pre>
+- We create a structured representation including the original query and a full description along with a detailed narration, which are distinct for each category following the standard TREC format. A sample query is given below.
+  
 ```xml
 <top>
 <num>100</num>
@@ -74,28 +93,6 @@ For each resulting topic, we create a structured representation including the or
 </instruments_tools>
 </top>
 ```
-
-#### LLM-assisted Topic Curation
-- We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
-- For each topic, we provide LLM with top-scored 20 abstracts  (via GESIS search system) to generate the corresponding description and narration.
-- We used the following prompts.
- <pre> 
-	|----------------------------------------------------------------------------------------------| 
-	| Type        | Prompt                                                                         |
- 	|-------------|--------------------------------------------------------------------------------|
-	| Description | You are a helpful assistant generating description for keyword queries.        |
-	|             | Write a short description (1–2 sentences) of the query in English. This        |
-	|             | should summarize the information need clearly and concisely. An information    |
-	|             | need is the underlying motivation or purpose that drives a person to seek      |
-	|             | information — it represents the gap between what someone knows and what        |
-	|             | they want or need to know in order to accomplish a goal.                       |
-	|----------------------------------------------------------------------------------------------|
-	| Narration   | You are a helpful assistant generating narration for keyword queries. Write    |
-	|             | a English narrative in 4-5 sentences that explains what makes a document       |
-	|             | relevant or non-relevant for this query. The narrative should include details, |
-	|             | examples, and possible edge cases.                                             |
-	|----------------------------------------------------------------------------------------------|
-</pre>
 
 ## Relevance Judgements
 
