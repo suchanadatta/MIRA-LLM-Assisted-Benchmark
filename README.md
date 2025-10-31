@@ -46,8 +46,7 @@ Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived fro
 
 ## Topics
 
-<pre> ```xml 
-   <top>
+<pre> ```xml <top>
 <num>100</num>
 <title>immigrant</title>
 <publication>
@@ -66,7 +65,6 @@ Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived fro
 	<desc>The user seeks methods for classifying immigrant background in German survey data (especially the Microcensus 2005–2009) and for measuring immigrants’ educational attainment. They need guidance on coding schemes, survey instrument options, and SAS/SPSS/Stata implementations, including approaches used in SOEP and NEPS.</desc>
 	<narr>A document is relevant to the query “immigrant” when it substantively addresses immigrants as a population—such as classification of immigrant background, integration, outcomes, or policies—rather than merely mentioning the term. The provided paragraph is clearly relevant because it centers on classifying immigrant background in the German Microcensus, measuring immigrants’ educational attainment, and survey instruments (SOEP/NEPS) tailored to people with foreign qualifications. Materials that use close synonyms or related constructs (migrants, foreign-born, immigration studies) also count, while pieces focused on emigration, internal/domestic migration, or unrelated uses (e.g., a film titled “The Immigrant”) are non-relevant. Methodological texts are relevant if immigrants are the primary analytic target (e.g., coding foreign credentials or deriving years of education for migrant respondents), but not if immigrants are only a passing example in a generic methods discussion. Edge cases include metadata-only hits or bibliographies where “immigrant” appears without substantive content about immigrant populations, which should be treated as non-relevant.</narr>
 </instruments_tools>
-</top> 
-``` </pre>
+</top> ``` </pre>
 
 
