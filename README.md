@@ -79,7 +79,7 @@ For each resulting topic, we create a structured representation including the or
 - We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
 - For each topic, we provide LLM with top-scored 20 abstracts  (via GESIS search system) to generate the corresponding description and narration.
 - We used the following prompts.
-  
+ <pre> 
 	| Type        | Prompt                                                                         |
  	|-------------|--------------------------------------------------------------------------------|
 	| Description | You are a helpful assistant generating description for keyword queries.        |
@@ -94,8 +94,7 @@ For each resulting topic, we create a structured representation including the or
 	|             | relevant or non-relevant for this query. The narrative should include details, |
 	|             | examples, and possible edge cases.                                             |
 	|----------------------------------------------------------------------------------------------|
-
-
+</pre>
 
 ## Relevance Judgements
 
