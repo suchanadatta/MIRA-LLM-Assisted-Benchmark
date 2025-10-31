@@ -96,6 +96,11 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 
 ## LLM-assisted Relevance Judgements
 
+- We used the following prompt.
+<pre>
+	You are a helpful assistant doing graded relevance assessment. Decide whether the given abstract is relevant to the keyword query. On a scale of 0 to 4, score the document where 0 indicates non-relevant and 4 being the highly relevant.
+</pre>
+
 ## Evaluation
 
 A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as P@100, nDCG@100, and Recall@100. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
