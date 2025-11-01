@@ -53,21 +53,21 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 - For each topic, we provide LLM with top-scored 20 abstracts (obtained from GESIS search system) to generate the corresponding [description and narration](models/generate_query_narration.py).
 - We used the following prompts.
  <pre> 
-	|----------------------------------------------------------------------------------------------| 
-	| Type        | Prompt                                                                         |
- 	|-------------|--------------------------------------------------------------------------------|
-	| Description | You are a helpful assistant generating description for keyword queries.        |
-	|             | Write a short description (1–2 sentences) of the query in English. This        |
-	|             | should summarize the information need clearly and concisely. An information    |
-	|             | need is the underlying motivation or purpose that drives a person to seek      |
-	|             | information — it represents the gap between what someone knows and what        |
-	|             | they want or need to know in order to accomplish a goal.                       |
-	|----------------------------------------------------------------------------------------------|
-	| Narration   | You are a helpful assistant generating narration for keyword queries. Write    |
-	|             | a English narrative in 4-5 sentences that explains what makes a document       |
-	|             | relevant or non-relevant for this query. The narrative should include details, |
-	|             | examples, and possible edge cases.                                             |
-	|----------------------------------------------------------------------------------------------|
+|----------------------------------------------------------------------------------------------| 
+| Type        | Prompt                                                                         |
+|-------------|--------------------------------------------------------------------------------|
+| Description | You are a helpful assistant generating description for keyword queries.        |
+|             | Write a short description (1–2 sentences) of the query in English. This        |
+|             | should summarize the information need clearly and concisely. An information    |
+|             | need is the underlying motivation or purpose that drives a person to seek      |
+|             | information — it represents the gap between what someone knows and what        |
+|             | they want or need to know in order to accomplish a goal.                       |
+|----------------------------------------------------------------------------------------------|
+| Narration   | You are a helpful assistant generating narration for keyword queries. Write    |
+|             | a English narrative in 4-5 sentences that explains what makes a document       |
+|             | relevant or non-relevant for this query. The narrative should include details, |
+|             | examples, and possible edge cases.                                             |
+|----------------------------------------------------------------------------------------------|
 </pre>
 - We create a [structured representation](models/make_query_trec_format.py) including the original topic and a full description along with a detailed narration of the final [215 topics](query_qrel/query.xml), which are distinct for each category following the standard TREC format. A sample query is given below.
   
