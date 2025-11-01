@@ -42,7 +42,7 @@ text
 
 Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived from topic modeling is as follows.
 
-<img src="topic_modelling/top50_topics_wordcloud.png" alt="word-cloud" width="500"/>
+<img src="topic_modelling/top50_topics_wordcloud.png" alt="word-cloud" width="600"/>
 
 ## Topics
 
