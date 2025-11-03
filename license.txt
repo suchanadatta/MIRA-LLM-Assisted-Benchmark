@@ -1,5 +1,5 @@
 All metadata is provided by GESIS - Leibniz-Institute for the Social Sciences (https://www.gesis.org) and can be found in GESIS Search (https://search.gesis.org) as well as in the GESIS Knowledge Graph (https://data.gesis.org/gesiskg). 
-Metadata is generally freely available under different license models. GESIS requests that you actively acknowledge and give attribution to all metadata sources, such as the data providers and any data aggregators, including GESIS. 
+Metadata is available under a Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/). GESIS requests that you actively acknowledge and give attribution to all metadata sources, such as the data providers and any data aggregators, including GESIS. 
 
 See further licensing details: 
 - for research data and variables from the GESIS Data Archive under https://search.gesis.org/faq -> Can I re-use metadata from the category "Research Data"? with a Creative Commons CC0 1.0 Universal Public Domain Dedication (http://creativecommons.org/publicdomain/zero/1.0/)

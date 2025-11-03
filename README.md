@@ -11,7 +11,7 @@ The collection contains metadata on `7,634` research datasets; `206,434` high-qu
    
 - **Lucene Index** : The [Lucene (version 8)](https://drive.google.com/file/d/1i8U389G4wSj7dMz41xehKQvvBryZuIs-/view?usp=drive_link) index of the metadata can be accessed here.
   
-- **Licence** : Check out the [licence information](license.txt) here.
+- **Licence** : Check out the metadata [licence information](license.txt) here.
 
 ## Topic Modeling
 
