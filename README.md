@@ -119,10 +119,8 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 
 A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as `P@100`, `nDCG@100`, and `Recall@100`. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
 
-|Publications |      |      |      |
-|------|------|-------------|------|
-| Name | Role | Institution | Year |                                               
-|------|------|--------------|------|
+Publications | Name | Role | Institution | Year |                                               
+|------------|------|------|-------------|------|
 | C. Manning | Professor | Stanford University | 2008 |
 | R. Baeza-Yates | Researcher | University of Chile | 2011 |
 | B. Croft | Scientist | UMass Amherst | 2015 |
