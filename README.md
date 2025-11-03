@@ -113,7 +113,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 </pre>
 - Each judgment has 4 attributes - `topic_id`, `document_id`, `document_category`, `relevance_score`.
 - We finally obtain a pool of `43,803` LLM-annotated [relevance judgments](query_qrel/qrels.tsv).
-- A randomly chosen `40% sample` of the annotations were validated by human annotators which confirmed `100%` agreement.
+- A randomly chosen `10% sample` of the annotations were validated by human annotators which confirmed `100%` agreement.
 
 ## Evaluation
 
