@@ -120,5 +120,6 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as `P@100`, `nDCG@100`, and `Recall@100`. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
 
 Publications | Models | nDCG@100 | P@100 | Recall@100 |
+|-----------------------------------------------------|
              | BM25 | 0.3406 | 0.2669 | 0.3307 |
 
