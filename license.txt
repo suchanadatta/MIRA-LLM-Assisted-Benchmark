@@ -10,3 +10,5 @@ See further licensing details:
 - for GESIS ZIS instruments under https://zis.gesis.org/licensing?lang=de with a CC-BY license (https://creativecommons.org/licenses/by/4.0/)
 - for GESIS SSOAR publications under https://www.gesis.org/en/ssoar/guidelines with a CC0 licence 
 - for the GESIS Knowledge Graph as a collection of all resources under a Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Software code in this project is licensed under a GNU General Public License v3.0 or later (https://www.gnu.org/licenses/gpl-3.0.en.html).
