@@ -33,12 +33,34 @@ text
 
 
 #### What the pipeline does
-- Embeds queries with sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-- Fits BERTopic to discover clusters/themes
-- (Optional) Reduces/merges small/overlapping topics
-- Exports topic summaries and per-document assignments
-- Saves the model for reuse
-- Creates a wordcloud based on topic frequencies
+This pipeline applies BERTopic to discover clusters/themes from search queries. Concretely, the workflow includes:
+- Fitting a BERTopic model to identify topical clusters/themes. Under the hood, BerTopic performs:
+  - Embedding extraction for each query using `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
+  - Dimensionality reduction with `UMAP`
+  - Clustering with `HDBSCAN`
+- (Optional) Reduce/merge similar topics, especially small or overlapping ones
+- Export topic summaries and per-document assignments
+- Saves the trained model for reuse
+- Generate a word cloud based on topic frequencies
+
+**Model configuration:** We use BERTopic with default settings, which corresponds to the following clustering setup:
+
+```python
+UMAP(
+    n_neighbors=15,
+    n_components=5,
+    min_dist=0.0,
+    metric="cosine",
+)
+
+HDBSCAN(
+    min_cluster_size=10,
+    metric="euclidean",
+    cluster_selection_method="eom",
+    prediction_data=True,
+)
+```
+
 
 Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived from topic modeling is as follows.
 
