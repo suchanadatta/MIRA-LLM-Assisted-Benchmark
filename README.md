@@ -68,7 +68,7 @@ Word cloud of the [top 50 topics](topic_modelling/top-50-topics.tsv) derived fro
 
 ## Topics
 
-MIRA topics originate from real user queries submitted to the GESIS Search platform. We used user logs collected between `2017 and 2024`, comprising `16,335,937` interactions. After filtering via topic modeling, we select `215` potential queries covering 4 categories. More details in the paper.
+MIRA topics originate from real user queries submitted to the GESIS Search platform. We used user logs collected between `2017 and 2024`, comprising `16,335,937` interactions. After filtering via topic modeling, we select `200` potential queries covering 4 categories. More details in the paper.
 
 #### LLM-assisted Topic Curation
 - We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
