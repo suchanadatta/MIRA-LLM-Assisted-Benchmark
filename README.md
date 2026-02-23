@@ -80,7 +80,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 |---------------------------------------------------------------------------------------------------------------------|
 | You are a helpful assistant generating description and narration for keyword queries. A search for the keyword      |
 | query will be performed on the GESIS search database. For EACH query, generate a focused description and narration  |
-| in English following the TREC style to define only the scope of relevance.                                          |                                          |
+| in English following the TREC style to define only the scope of relevance.                                          | 
 | The search categories are: 1. publication 2. research_data 3. variables 4. instruments_and_tools                    |
 | Return a JSON ARRAY. Each array element MUST have:                                                                  |
 | - qid                                                                                                               |
@@ -96,29 +96,29 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
   
 ```xml
 <top>
-<num>100</num>
-<title>immigrant</title>
+<num>221</num>
+<title>immigration</title>
 <publication>
-	<desc>The user seeks an overview of research on immigrants’ integration and impacts in host societies. Specifically, they want evidence on how immigration policy frameworks and the composition of inflows shape native attitudes, labor market outcomes, welfare/crime perceptions, and political behavior across countries, and what policies best support integration.</desc>
-	<narr>A document is relevant if it substantively focuses on immigrants as people residing in a receiving country—covering their experiences, integration, labor-market outcomes, health, legal treatment, political participation, or public attitudes/policy toward immigration (e.g., studies of EU8 immigrants in Germany, second-generation outcomes, or analyses of integrative vs restrictive policies). Morphological and related terms count when clearly about the same concept, such as immigration, immigrant-origin, first/second generation, or comparisons of refugees/economic migrants that speak to immigrant reception and impact. It is weakly or non-relevant if “immigrant” appears only in passing (titles, footnotes, metadata), is used metaphorically or in unrelated domains (e.g., “Immigrant Song,” animal “immigrants” in ecology), or discusses emigration/internal migration without linking to immigrants in a host society. Edge cases include country-specific policy evaluations, legal analyses of enforcement and criminalization, or media-framing studies—all relevant if immigrants are the core subject; by contrast, broad labor or cultural studies that do not distinguish immigrant status, or datasets where “immigrant” is incidental, are not. Even documents taking negative or positive stances, historical chapter outlines, or cross-national attitude surveys are relevant when immigrants are central to the research question.</narr>
+	<desc>Publications on immigration and migrants, covering migration flows, integration, policy, socioeconomic outcomes, health, and legal status.</desc>
+	<narr>Include empirical studies, reviews, policy analyses and theoretical works that address international migration, immigrant integration and assimilation, labor market outcomes of immigrants, refugee/asylum issues, migration policy and laws, remittances, transnationalism, and migrant health and education. Relevant disciplines: sociology, demography, economics, political science, public health and law. Exclude studies exclusively about internal migration (unless relevant), tourism travel statistics not related to migration, and purely historical migration narratives with no contemporary analytical relevance unless explicitly comparative.</narr>
 </publication>
 <research_data>
-	<desc>The user seeks comprehensive surveys and datasets on immigrants and immigration in Germany and the EU, covering public attitudes, policy evaluation, skilled-worker migration, and immigrants’ integration and experiences, along with methodological and demographic details.</desc>
-	<narr>A document is relevant to the query “immigrant” if it primarily discusses immigrants or immigration, such as public attitudes to immigration in Germany, integration outcomes, skilled worker admission, asylum/deportation policy, or survey-based findings on immigrant groups (e.g., ENTRA, EU MIDIS II, SCIP). Materials that present methods and demographics specifically for immigrant populations (e.g., sampling Italians, Poles, Syrians, Turks; second-generation studies), or analyze immigrant experiences like language acquisition, discrimination, labor market access, or party positions on immigration, also count as relevant. Items become weakly relevant or non-relevant when “immigrant” appears only tangentially within broad topics (e.g., general environment or rail-service modules) or when the primary focus is the general population with only a passing variable about immigrants. Edge cases include documents about refugees/asylum seekers or second-generation migrants, which are usually relevant if they address immigrant integration or policy; historical migration studies (e.g., 17th–20th century Berlin) are relevant if they focus on immigrant groups rather than generic mobility. Conversely, pieces centered on emigration from a country, generic “migration” without specifying immigrants in the destination, or where “immigrant” appears only in metadata or a single manifesto bullet without substantive analysis, are likely non-relevant.</narr>
+	<desc>Datasets and administrative sources capturing migration status, flows, immigrant characteristics, integration indicators, and asylum/refugee records.</desc>
+	<narr>Include population registers, immigration and naturalization administrative data, household and labor force surveys with migrant identifiers (country of birth, citizenship, year of arrival), refugee and asylum seeker databases, longitudinal migrant cohort studies, and datasets on remittances and migrant networks. Data should allow analysis of migration status, origin/destination, length of stay and integration outcomes. Exclude datasets that only report tourist or short-term travel without migration intent, and non-human migration data.</narr>
 </research_data>
 <variables>
-	<desc>A request for survey questions and public-opinion measures about immigrants, covering attitudes on assimilation and cultural impact, economic effects, crime and jobs, illegal immigration/exclusion, and different immigrant origins (e.g., Eastern Europe, south of the Mediterranean, EU asylum seekers). The user likely wants to find or analyze questionnaire items that measure acceptance of immigrants and perceived societal impacts.</desc>
-	<narr>A document is relevant when immigrants are the central subject — for example when it contains survey items, policy statements, or analyses about immigrants’ economic, cultural, or legal impacts (e.g., questions on whether “immigrants increase crime rates,” “take jobs away,” “undermine culture,” or about “illegal immigrants” and “EU immigrants seeking political asylum”). Text that lists variable codes and repeated questionnaire items (Q9a, V52, v315–v318) is relevant if those codes map to substantive questions or responses, because it shows the document captures public attitudes and subgroup distinctions (Eastern Europe, South of the Mediterranean, other EU countries). A document is non‑relevant if “immigrant” appears only as a stray label, file code, or in an unrelated context (e.g., metadata, variable names with no question text), or if it actually discusses emigration, tourists, or student exchange rather than people settling. Edge cases include mixed or noisy transcripts (repeated lines, truncated items) and documents that mention immigrants but only in passing or at a different granularity (legal status vs cultural integration); relevance in those cases depends on whether the user cares about broad coverage of attitudes or only specific subtopics like asylum, crime, or labor market effects.</narr>
+	<desc>Variables that identify and characterize migrants and migration processes: country of birth, citizenship, migration reason/status, length of residence, legal status, language proficiency, and integration outcomes.</desc>
+	<narr>Include variables such as migrant status (immigrant, emigrant, refugee, asylum-seeker), country of birth, citizenship, parental country of birth, year of arrival, length of stay, legal residency status, reason for migration, language skills, education credentials, employment and income, housing, naturalization, social integration indicators, and access to services. Also include remittance behavior and transnational ties when linked to migration. Exclude variables that do not permit identification of migration-related attributes or that only measure temporary travel for tourism.</narr>
 </variables>
 <instruments_tools>
-	<desc>The user seeks methods for classifying immigrant background in German survey data (especially the Microcensus 2005–2009) and for measuring immigrants’ educational attainment. They need guidance on coding schemes, survey instrument options, and SAS/SPSS/Stata implementations, including approaches used in SOEP and NEPS.</desc>
-	<narr>A document is relevant to the query “immigrant” when it substantively addresses immigrants as a population—such as classification of immigrant background, integration, outcomes, or policies—rather than merely mentioning the term. The provided paragraph is clearly relevant because it centers on classifying immigrant background in the German Microcensus, measuring immigrants’ educational attainment, and survey instruments (SOEP/NEPS) tailored to people with foreign qualifications. Materials that use close synonyms or related constructs (migrants, foreign-born, immigration studies) also count, while pieces focused on emigration, internal/domestic migration, or unrelated uses (e.g., a film titled “The Immigrant”) are non-relevant. Methodological texts are relevant if immigrants are the primary analytic target (e.g., coding foreign credentials or deriving years of education for migrant respondents), but not if immigrants are only a passing example in a generic methods discussion. Edge cases include metadata-only hits or bibliographies where “immigrant” appears without substantive content about immigrant populations, which should be treated as non-relevant.</narr>
+	<desc>Standard instruments, questionnaires and coding schemes used in migration research, and tools for measuring integration and legal status.</desc>
+	<narr>Include survey modules and question batteries for migration (e.g., migrant background question sets used in EU surveys), language proficiency assessments, integration scales (social, economic, civic integration indices), legal-status coding schemes, and tools for harmonizing migration variables across datasets (e.g., harmonization guides for country of birth, citizenship, and year of arrival). Also include translations/translation protocols for migrant surveys and instruments for measuring xenophobia or attitudes toward immigrants. Exclude administrative IT systems unrelated to research use and instruments designed solely for immigration officers' operational use without research documentation.</narr>
 </instruments_tools>
 </top>
 ```
 
 ## LLM-assisted Relevance Judgements
-- For each of the 215 selected topics, we identified a pool of candidate documents to be judged.
+- For each of the 200 selected topics, we identified a pool of candidate documents to be judged.
 - We select documents from all four categories that received a `view_record` or `download` or `export` user interaction after the query was issued in the GESIS Search.
 - We used `gpt-5-mini` to judge those documents.
 - Judgments were made on a graded relevance scale from '0' to '4'.
@@ -129,14 +129,60 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
   - `4` → Perfectly Relevant
 - We provided LLM with the `topic description` and the `document metadata`, instructing it to assess their relevance.
 - We used the following [prompt](models/create_qrel_file.py) while assessing the documents by the LLM.
-<pre>
-	"You are a helpful assistant doing graded relevance assessment. Decide whether the given
-	abstract is relevant to the keyword query. On a scale of 0 to 4, score the document where 
-	'0' indicates non-relevant and '4' being the highly relevant."
+ <pre> 
+|---------------------------------------------------------------------------------------------------------------------| 
+| Prompt                                                                                                              |
+|---------------------------------------------------------------------------------------------------------------------|
+| You are an adversarial relevance assessor for an information retrieval evaluation. Your job is NOT to reward good   |
+| papers. Your job is to identify ONLY those documents that are indispensable for satisfying the query's information  |
+| need. Assume the following:                                                                                         |
+| - Most retrieved documents are NOT relevant.                                                                        |
+| - Even well-written, on-topic abstracts are usually NOT highly relevant.                                            |
+| - A score of 4 should be exceptionally rare.                                                                        |
+| Core principle: A document is relevant ONLY if it would cause a clear loss of information if excluded from the      |
+| result set for this query. Relevance MUST be judged against the FULL query intent, not topical similarity. Relevance| 
+| scale (strictly enforced):                                                                                          |
+|                                                                                                                     |
+| 0 = Not relevant                                                                                                    |  
+|   The abstract does not explicitly attempt to answer the query intent.                                              |
+|   Background mentions, shared terminology, or general alignment DO NOT count.                                       |
+|                                                                                                                     |
+| 1 = Weakly related                                                                                                  |  
+|   The abstract is in the same broad area, but does not answer the query.                                            |
+|   It could appear in results for many different, loosely related queries.                                           |
+|                           																						  |
+| 2 = Conditionally relevant																						  |
+|   The abstract addresses part of the query intent, BUT:															  |
+|   - only indirectly, OR																							  |
+|   - as a secondary concern, OR																					  |
+|   - without producing concrete insight for the query.																  |
+|																													  |
+| 3 = Strongly relevant      																						  |
+|   The abstract clearly and explicitly addresses the query intent,													  |
+|   BUT the query is not the sole or dominant focus of the work.													  |
+|   Removing this document would reduce coverage, but not break it.													  |
+|																													  |
+| 4 = Essential (assign ONLY if ALL conditions hold):																  |
+|   - The query intent is the central research problem																  |
+|   - The methods are designed specifically for this intent															  |
+|   - The results directly and uniquely answer the query															  |
+|   - The document would be a canonical or defining reference														  |
+|   - Removing it would materially damage the answer to the query													  |
+|																													  |
+| IMPORTANT CONSTRAINTS:																							  |
+| - If ANY of the 4 conditions are missing → score MUST be ≤ 3   													  |
+| - If you hesitate between 3 and 4 → choose 3																		  |
+| - If you hesitate between 2 and 3 → choose 2																		  |
+| - If relevance is plausible but not explicit → choose 1 or 0														  |
+| - Score 4 should feel uncomfortable to assign																		  |
+|																													  |
+| Ignore ranking position and prior scores.																			  |
+| Output ONLY a single integer from 0 to 4.                                                                           |
+|---------------------------------------------------------------------------------------------------------------------|
 </pre>
 - Each judgment has 4 attributes - `topic_id`, `document_id`, `document_category`, `relevance_score`.
 - We finally obtain a pool of `43,803` LLM-annotated [relevance judgments](query_qrel/qrels.tsv).
-- A randomly chosen `10% sample` of the annotations were validated by human annotators which confirmed `100%` agreement.
+- A randomly chosen `10% sample` of the annotations were validated by human annotators. Agreement between the human and the LLM judgments was measured using quadratic-weighted Cohen’s \kappa, yielding 𝜅 = 0.86, which indicates substantial agreements
 
 ## Evaluation
 
