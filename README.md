@@ -75,23 +75,22 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 - For each topic, we provide LLM with top-scored 20 abstracts (obtained from GESIS search system) to generate the corresponding [description and narration](models/generate_query_narration.py).
 - We used the following prompt.
  <pre> 
-|--------------------------------------------------------------------------------------------------| 
-| Prompt                                                                                           |
-|--------------------------------------------------------------------------------------------------|
-| You are a helpful assistant generating description and narration for keyword queries. A search   |
-| for the keyword query will be performed on the GESIS search database. For EACH query, generate   |
-| a focused description and narration in English following the TREC style to define only the scope |
-| of relevance.                                                                                    |
-| The search categories are: 1. publication 2. research_data 3. variables 4. instruments_and_tools |
-| Return a JSON ARRAY. Each array element MUST have:                                               |
-| - qid                                                                                            |
-| - query                                                                                          |
-| - publication {description, narration}                                                           |
-| - research_data {description, narration}                                                         |
-| - variables {description, narration}                                                             |
-| - instruments_and_tools {description, narration}                                                 |
-| Return ONLY valid JSON. No extra text.                                                           |
-|--------------------------------------------------------------------------------------------------|
+|---------------------------------------------------------------------------------------------------------------------| 
+| Prompt                                                                                                              |
+|---------------------------------------------------------------------------------------------------------------------|
+| You are a helpful assistant generating description and narration for keyword queries. A search for the keyword      |
+| query will be performed on the GESIS search database. For EACH query, generate a focused description and narration  |
+| in English following the TREC style to define only the scope of relevance.                                          |                                          |
+| The search categories are: 1. publication 2. research_data 3. variables 4. instruments_and_tools                    |
+| Return a JSON ARRAY. Each array element MUST have:                                                                  |
+| - qid                                                                                                               |
+| - query                                                                                                             |
+| - publication {description, narration}                                                                              |
+| - research_data {description, narration}                                                                            |
+| - variables {description, narration}                                                                                |
+| - instruments_and_tools {description, narration}                                                                    |
+| Return ONLY valid JSON. No extra text.                                                                              |
+|---------------------------------------------------------------------------------------------------------------------|
 </pre>
 - We create a [structured representation](models/make_query_trec_format.py) including the original topic and a full description along with a detailed narration of the final [200 topics](query_qrel/query.xml), which are distinct for each category following the standard TREC format. A sample query is given below.
   
