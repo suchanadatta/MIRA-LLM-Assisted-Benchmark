@@ -72,7 +72,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 
 #### LLM-assisted Topic Curation
 - We used `gpt-5-mini` to generate `description` and `narration` of each of the topic.
-- For each topic, we provide LLM with top-scored 20 abstracts (obtained from GESIS search system) to generate the corresponding [description and narration](models/generate_query_narration.py).
+- For each topic, [descriptions and narrations](models/generate_query_narr_desc_llm_batch.py) are generated using an LLM, guided by a purpose-built prompt designed to produce category-aware topic expansions.
 - We used the following prompt.
  <pre> 
 |---------------------------------------------------------------------------------------------------------------------| 
@@ -92,7 +92,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 | Return ONLY valid JSON. No extra text.                                                                              |
 |---------------------------------------------------------------------------------------------------------------------|
 </pre>
-- We create a [structured representation](models/make_query_trec_format.py) including the original topic and a full description along with a detailed narration of the final [200 topics](query_qrel/query.xml), which are distinct for each category following the standard TREC format. A sample query is given below.
+- We create a [structured representation](models/make_query_trec_format.py) including the original topic and a full description along with a detailed narration of the final [200 topics](query_qrel/new/query.xml), which are distinct for each category following the standard TREC format. A sample query is given below.
   
 ```xml
 <top>
@@ -128,7 +128,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
   - `3` → Highly Relevant, and
   - `4` → Perfectly Relevant
 - We provided LLM with the `topic description` and the `document metadata`, instructing it to assess their relevance.
-- We used the following [prompt](models/create_qrel_file.py) while assessing the documents by the LLM.
+- We used the following [prompt](models/generate_qrel_file_with_desc_batch.py) while assessing the documents by the LLM.
  <pre> 
 |---------------------------------------------------------------------------------------------------------------------| 
 | Prompt                                                                                                              |
@@ -181,7 +181,7 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 |---------------------------------------------------------------------------------------------------------------------|
 </pre>
 - Each judgment has 4 attributes - `topic_id`, `document_id`, `document_category`, `relevance_score`.
-- We finally obtain a pool of `43,803` LLM-annotated [relevance judgments](query_qrel/qrels.tsv).
+- We finally obtain a pool of `55,279` LLM-annotated [relevance judgments](query_qrel/new/qrels.tsv).
 - A randomly chosen `10% sample` of the annotations were validated by human annotators. Agreement between the human and the LLM judgments was measured using quadratic-weighted Cohen’s 𝜅, yielding 𝜅 = 0.86, which indicates substantial agreements.
 
 ## Evaluation
