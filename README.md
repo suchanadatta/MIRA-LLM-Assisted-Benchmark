@@ -15,7 +15,7 @@ The collection contains metadata on `7,634` research datasets; `206,434` high-qu
 
 ## Topic Modeling
 
-The initial pool of multi-category topics contained significant semantic overlap, as users frequently expressed core information needs through multiple query variants. Therefore, to group these variations, we performed topic modeling on the `412,032` pre-selected topics using `BERTopic` and ended up with `215` potential topics.
+The initial pool of multi-category topics contained significant semantic overlap, as users frequently expressed core information needs through multiple query variants. Therefore, to group these variations, we performed topic modeling on the `412,032` pre-selected topics using `BERTopic` and ended up with `200` potential topics.
 [Topic Modeling](topic_modelling) includes a Jupyter notebook that trains topic models for our corpus and produce artifacts (e.g. topic-term tables, document-topic distributions, etc.).
 
 #### Prepare data
@@ -182,42 +182,38 @@ MIRA topics originate from real user queries submitted to the GESIS Search platf
 </pre>
 - Each judgment has 4 attributes - `topic_id`, `document_id`, `document_category`, `relevance_score`.
 - We finally obtain a pool of `43,803` LLM-annotated [relevance judgments](query_qrel/qrels.tsv).
-- A randomly chosen `10% sample` of the annotations were validated by human annotators. Agreement between the human and the LLM judgments was measured using quadratic-weighted Cohen’s \kappa, yielding 𝜅 = 0.86, which indicates substantial agreements
+- A randomly chosen `10% sample` of the annotations were validated by human annotators. Agreement between the human and the LLM judgments was measured using quadratic-weighted Cohen’s 𝜅, yielding 𝜅 = 0.86, which indicates substantial agreements.
 
 ## Evaluation
 
-A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as `P@100`, `nDCG@100`, and `Recall@100`. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
+A number of statistical and neural models are [evaluated](evaluation/custom_eval.py) using standard IR metrics, such as `P@10`, `nDCG@10`, `MAP` and `GMAP`. Retreival effectiveness of each query can also be measured using this [script](evaluation/custom_eval_per_query.py).
 	
-| Publications        | Models      | nDCG@100 | P@100  | Recall@100 | 
-|---------------------|-------------|----------|--------|------------|
-|                     | BM25        | 0.3406   | 0.2669 | 0.3307     |                     
-|                     | BM25 (desc) | 0.3576   | 0.2802 | 0.3472     |                     
-|                     | RLM         | 0.3678   | 0.2883 | 0.3572     |                     
-|                     | ColBERT     | 0.3917   | 0.3069 | 0.3803     |                     
-|                     | MonoT5      | 0.4051   | 0.3196 | 0.4036     | 
+| Publications        | Models      | P@10   | nDCG@10 | MAP    | GMAP   |
+|---------------------|-------------|--------|---------|--------|--------|
+|                     | BM25        | 0.6120 | 0.6091  | 0.5098 | 0.5260 |            
+|                     | RLM         | 0.6242 | 0.6213  | 0.5200 | 0.5365 |            
+|                     | ColBERT     | 0.6523 | 0.6492  | 0.5434 | 0.5607 |            
+|                     | MonoT5      | 0.6365 | 0.6335  | 0.5302 | 0.5470 |
 
-| Research Data       | Models      | nDCG@100 | P@100  | Recall@100 |
-|---------------------|-------------|----------|--------|------------|
-|                     | BM25        | 0.3886   | 0.3139 | 0.4178     |
-|                     | BM25 (desc) | 0.4080   | 0.3296 | 0.4387     |
-|                     | RLM         | 0.4197   | 0.3390 | 0.4512     |
-|                     | ColBERT     | 0.4469   | 0.3611 | 0.4805     |
-|                     | MonoT5      | 0.4586   | 0.3704 | 0.4930     |
+| Research Data       | Models      | P@10   | nDCG@10 | MAP    | GMAP   |
+|---------------------|-------------|--------|---------|--------|--------|
+|                     | BM25        | 0.5045 | 0.5321  | 0.4023 | 0.3058 |            
+|                     | RLM         | 0.5146 | 0.5427  | 0.4103 | 0.3119 |            
+|                     | ColBERT     | 0.5377 | 0.5639  | 0.4263 | 0.3241 |            
+|                     | MonoT5      | 0.5247 | 0.5736  | 0.4337 | 0.3297 |
 
-| Variables           | Models      | nDCG@100 | P@100  | Recall@100 | 
-|---------------------|-------------|----------|--------|------------|
-|                     | BM25        | 0.3400   | 0.2854 | 0.3611     |                     
-|                     | BM25 (desc) | 0.3570   | 0.2997 | 0.3792     |                     
-|                     | RLM         | 0.3910   | 0.3082 | 0.3901     |                     
-|                     | ColBERT     | 0.3917   | 0.3282 | 0.4153     |                     
-|                     | MonoT5      | 0.4012   | 0.3368 | 0.4261     |                     
+| Variables           | Models      | P@10   | nDCG@10 | MAP    | GMAP   |
+|---------------------|-------------|--------|---------|--------|--------|
+|                     | BM25        | 0.4905 | 0.4408  | 0.5057 | 0.1648 |            
+|                     | RLM         | 0.5003 | 0.4496  | 0.5158 | 0.1681 |            
+|                     | ColBERT     | 0.5198 | 0.4672  | 0.5354 | 0.1745 |            
+|                     | MonoT5      | 0.5288 | 0.4752  | 0.5249 | 0.1711 |                    
 
-| Instruments & Tools | Models      | nDCG@100 | P@100  | Recall@100 |
-|---------------------|-------------|----------|--------|------------|
-|                     | BM25        | 0.3398   | 0.2578 | 0.3289     |
-|                     | BM25 (desc) | 0.3568   | 0.2707 | 0.3453     |
-|                     | RLM         | 0.3670   | 0.2784 | 0.3552     |
-|                     | ColBERT     | 0.3908   | 0.2965 | 0.3782     |
-|                     | MonoT5      | 0.4011   | 0.3096 | 0.3991     |
+| Instruments & Tools | Models      | P@10   | nDCG@10 | MAP    | GMAP   |
+|---------------------|-------------|--------|---------|--------|--------|
+|                     | BM25        | 0.4190 | 0.4711  | 0.4540 | 0.2152 |            
+|                     | RLM         | 0.4274 | 0.4805  | 0.4631 | 0.2195 |            
+|                     | ColBERT     | 0.4436 | 0.4988  | 0.4807 | 0.2243 |            
+|                     | MonoT5      | 0.4349 | 0.4890  | 0.4713 | 0.2234 |
 
 
