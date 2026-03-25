@@ -1,0 +1,12 @@
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/queryparser/QueryXmlParser.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/searcher/GesisVariableSearcher.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/searcher/GesisPublicationSearcher.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/common/DocField.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/indexer/GesisInstrumentsIndexer.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/indexer/GesisVariablesIndexer.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/common/SetAnalyzerWithStopword.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/searcher/GesisInstrumentsSearcher.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/searcher/GesisResearchSearcher.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/indexer/GesisPublicationIndexer.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/indexer/GesisResearchIndexer.java
+/Users/suchana/NetBeansProjects/GesisLogDataset/src/main/java/org/queryparser/QueryCategory.java

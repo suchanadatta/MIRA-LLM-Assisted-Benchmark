@@ -1,0 +1,10 @@
+org/indexer/GesisResearchIndexer.class
+org/searcher/GESISLogQuery.class
+org/indexer/GesisInstrumentsIndexer.class
+common/SetAnalyzerWithStopword.class
+org/indexer/GesisVariablesIndexer.class
+org/searcher/GesisInstrumentsSearcher.class
+org/queryparser/QueryCategory.class
+org/indexer/GesisPublicationIndexer.class
+org/queryparser/QueryXmlParser.class
+common/DocField.class
