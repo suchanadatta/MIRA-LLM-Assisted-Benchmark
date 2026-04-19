@@ -13,6 +13,53 @@ The collection contains metadata on `7,634` research datasets; `206,434` high-qu
   
 - **Licence** : Check out the [licence information](license.txt) here.
 
+
+## Metadata Schema
+
+| Field         | Type         | Description                                                                  |
+| ------------- | ------------ |------------------------------------------------------------------------------|
+| `id`          | string       | Unique identifier of the item                                                |
+| `type`        | string       | Item type (`publication`, `research_data`, `instruments_tools`, `variables`) |
+| `title`       | string       | Title of the item                                                            |
+| `title_en`    | string       | English title (if available)                                                 |
+| `date`        | string       | Publication or creation year                                                 |
+| `url`         | string       | Gesis Search URL pointing to the item                                        |
+| `abstract`    | string       | Abstract/description (not available for `variables`)                         |
+| `abstract_en` | string       | English abstract (not available for `variables`)                             |
+| `person`      | list[string] | Associated persons (e.g., authors); not available for `variables`            |
+| `topic`       | list[string] | Topic keywords; not available for `variables`                                |
+| `topic_en`    | list[string] | English topic keywords; not available for `variables`                        |
+
+### Type-Specific Fields
+
+#### Research Data
+| Field                 | Type   | Description                        |
+| --------------------- | ------ | ---------------------------------- |
+| `content_description` | string | Description of the dataset content |
+
+#### Variables
+| Field              | Type   | Description                                         |
+| ------------------ | ------ |-----------------------------------------------------|
+| `question_text`    | string | Question text associated with the variable          |
+| `question_text_en` | string | English version of the question text (if available) |
+
+### Field Availability by Item Type
+| Field                    | publication | research_data | instruments_tools | variables |
+|--------------------------| ----------- | ------------- | ----------------- |-----------|
+| `id`                     | ✓           | ✓             | ✓                 | ✓         |
+| `type`                   | ✓           | ✓             | ✓                 | ✓         |
+| `title`                  | ✓           | ✓             | ✓                 | ✓         |
+| `title_en`               | ✓           | ✓             | ✓                 | ✓         |
+| `date`                   | ✓           | ✓             | ✓                 | ✓         |
+| `url`                    | ✓           | ✓             | ✓                 | ✓         |
+| `abstract`/`abstract_en` | ✓           | ✓             | ✓                 | ✗         |
+| `content_description`    | ✗           | ✓             | ✗                 | ✗         |
+| `person`                 | ✓           | ✓             | ✓                 | ✗         |
+| `question_text`          | ✗           | ✗             | ✗                 | ✓         |
+| `question_text_en`       | ✗           | ✗             | ✗                 | ✓         |
+| `topic` / `topic_en`     | ✓           | ✓             | ✓                 | ✗         |
+
+
 ## Topic Modeling
 
 The initial pool of multi-category topics contained significant semantic overlap, as users frequently expressed core information needs through multiple query variants. Therefore, to group these variations, we performed topic modeling on the `412,032` pre-selected topics using `BERTopic` and ended up with `200` potential topics.
