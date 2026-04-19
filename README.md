@@ -2,7 +2,7 @@
 
 **MIRA** dataset, a novel test collection designed to address the critical evaluation gap in multi-categorical information retrieval.
 The modern search experience is integrated, yet IR benchmarks have lagged behind, constrained by a lack of collections that mirror this reality.
-MIRA dataset directly confronts this challenge by providing a unified framework encompassing four distinct scholarly categories - `Publications`, `Research Data`, `Variables` and `Instruments & Tools` - all grounded in real user queries from the GESIS Search platform.
+MIRA dataset directly confronts this challenge by providing a unified framework encompassing four distinct scholarly categories - `Publications`, `Research Data`, `Variables` and `Instruments & Tools` - all grounded in real user queries from the [GESIS Search](https://search.gesis.org/) platform.
 
 ## Metadata Export
 The collection contains metadata on `7,634` research datasets; `206,434` high-quality metadata variables; `604` instruments & tools; and `254,097` publications with a total of `468,769` documents, provided as a set of JSON files.
