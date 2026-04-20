@@ -3,6 +3,7 @@ import csv
 import argparse
 from openai import OpenAI
 from typing import List, Dict
+import os
 
 
 # -------------------- OpenAI client --------------------

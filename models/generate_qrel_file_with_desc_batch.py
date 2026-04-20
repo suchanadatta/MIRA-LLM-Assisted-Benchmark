@@ -1,6 +1,5 @@
 import pandas as pd
 import ast
-import openai
 from openai import OpenAI
 import requests
 import re
@@ -8,6 +7,7 @@ import argparse
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 import json
+import os
 
 
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
@@ -264,12 +264,9 @@ def main():
     # extract_items_for_each_query_per_category()
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--query_file', default='/Users/suchana/python_projects/victeur/LLM-based-relevance-judgement/'
-                                                'query_narr_desc/new/query.xml')
-    parser.add_argument('--item_file', default='/Users/suchana/python_projects/victeur/LLM-based-relevance-judgement/'
-                                               'query_narr_desc/new/gesis_log_annotation_file.tsv')
-    parser.add_argument('--qrel_file', default='/Users/suchana/python_projects/victeur/LLM-based-relevance-judgement/'
-                                               '/test_data/foo.su')
+    parser.add_argument('--query_file', default='../../query_qrel/new/query.xml', required=True)
+    parser.add_argument('--item_file', default='../query_narr_desc/new/gesis_log_annotation_file.tsv', required=True)
+    parser.add_argument('--qrel_file', default='../../query_qrel/new/qrels.tsv', required=True)
     parser.add_argument('--batch_size', type=int, default=25, help='Number of documents to process in each batch')
     parser.add_argument('--model', type=str, default='gpt-5-mini',
                         help='OpenAI model to use (e.g., gpt-4o-mini, gpt-4, gpt-4-turbo)')

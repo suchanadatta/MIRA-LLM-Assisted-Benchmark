@@ -1,6 +1,7 @@
 import pandas as pd
 from collections import defaultdict
 import numpy as np
+import argparse
 
 
 def load_relevance_judgments(file_path):
@@ -156,11 +157,15 @@ def evaluate(judgments, results):
     return summary, metrics
 
 
-# Main execution
-if __name__ == "__main__":
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--rel_judge', default='../query_qrel/new/qrel.tsv', required=True)
+    parser.add_argument('--bm25_res', default='../bm25_res/publication_top100_bm25.res', required=True)
+    args = parser.parse_args()
+
     # Load files
-    judgments = load_relevance_judgments('./qrels/qrels.tsv')
-    results = load_bm25_results('/Users/suchana/NetBeansProjects/GesisLogDataset/output/eval_test_merged.tsv')
+    judgments = load_relevance_judgments(args.rel_judge)
+    results = load_bm25_results(args.bm25_res)
 
     # Compute metrics
     summary, all_metrics = evaluate(judgments, results)
@@ -172,3 +177,9 @@ if __name__ == "__main__":
     for metric, value in summary.items():
         print(f"{metric:20s}: {value:.4f}")
     print("=" * 50)
+
+
+# Main execution
+if __name__ == "__main__":
+    main()
+

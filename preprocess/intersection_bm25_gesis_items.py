@@ -14,7 +14,7 @@ qrel_dict = (
 # print(qrel_dict)
 
 # --- Load BM25 results ---
-bm25 = pd.read_csv("/Users/suchana/NetBeansProjects/GesisLogDataset/output/publication_top100_bm25.res",
+bm25 = pd.read_csv("../bm25_res/publication_top100_bm25.res",
                    sep=r"\s+", header=None,
                    names=["query_id", "Q0", "document_id", "rank", "score", "document_category"])
 bm25["query_id"] = bm25["query_id"].astype(str)
@@ -38,5 +38,4 @@ output = filtered[["query_id", "Q0", "document_id", "new_rank", "score", "docume
 print(output)
 
 # Save to file
-output.to_csv("/Users/suchana/NetBeansProjects/GesisLogDataset/output/intersection_bm25_gesis/filtered_results.tsv",
-              sep="\t", index=False, header=False)
+output.to_csv("./filtered_results.tsv", sep="\t", index=False, header=False)

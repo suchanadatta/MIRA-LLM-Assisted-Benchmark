@@ -1,6 +1,7 @@
 import pandas as pd
 from collections import defaultdict
 import numpy as np
+import argparse
 
 
 def load_relevance_judgments(file_path):
@@ -212,18 +213,22 @@ def export_per_query_evaluation_csv(judgments, results, output_file):
     print(f"\nPer-query results exported to {output_file}")
 
 
-# Main execution
-if __name__ == "__main__":
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--rel_judge', default='../query_qrel/new/qrel.tsv')
+    parser.add_argument('--bm25_res', default='../bm25_res/publication_top100_bm25.res')
+    args = parser.parse_args()
+
     # Load files
-    judgments = load_relevance_judgments('./qrels/qrels.tsv')
-    results = load_bm25_results('/Users/suchana/NetBeansProjects/GesisLogDataset/output/eval_test_merged.tsv')
+    judgments = load_relevance_judgments(args.rel_judge)
+    results = load_bm25_results(args.bm25_res)
 
     # Compute metrics
     summary, all_metrics = evaluate(judgments, results)
 
-    # Print aggregate results
+    # Print results
     print("=" * 50)
-    print("EVALUATION METRICS SUMMARY (AGGREGATE)")
+    print("EVALUATION METRICS SUMMARY")
     print("=" * 50)
     for metric, value in summary.items():
         print(f"{metric:20s}: {value:.4f}")
@@ -235,3 +240,8 @@ if __name__ == "__main__":
 
     # Optionally export to CSV
     export_per_query_evaluation_csv(judgments, results, 'per_query_evaluation.csv')
+
+
+# Main execution
+if __name__ == "__main__":
+    main()

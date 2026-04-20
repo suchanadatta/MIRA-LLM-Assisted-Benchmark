@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def main():
-    df_aggr = pd.read_csv('/Users/suchana/Research/GESIS/aggregated_data_v2.tsv', sep='\t', encoding="utf-8")
+    df_aggr = pd.read_csv('./aggregated_data_v2.tsv', sep='\t', encoding="utf-8")
 
     df_aggr = df_aggr.loc[:, ~df_aggr.columns.str.contains('^Unnamed')]
 
@@ -10,7 +10,7 @@ def main():
     df_aggr.insert(0, 'query_id', range(1, len(df_aggr) + 1))
 
     # Save the updated dataframe to a new TSV file
-    df_aggr.to_csv('/Users/suchana/Research/GESIS/aggregated_data_v2_qid.tsv', sep="\t", index=False, encoding="utf-8")
+    df_aggr.to_csv('./aggregated_data_v2_qid.tsv', sep="\t", index=False, encoding="utf-8")
 
     # Remove special characters, keep only letters, numbers, and spaces
     df_aggr["query_norm"] = (df_aggr["query"]

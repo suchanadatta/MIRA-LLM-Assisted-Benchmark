@@ -26,7 +26,7 @@ def detect_query_lang(query, model="gpt-5"):
 grouped_items = pd.read_csv("./output/per_query_total_items.tsv", sep="\t", encoding="utf-8")
 
 # Load topic cluster names file
-clusters = pd.read_csv("/Users/suchana/Research/GESIS/top-50-topics.tsv", sep="\t", encoding="utf-8")
+clusters = pd.read_csv("./top-50-topics.tsv", sep="\t", encoding="utf-8")
 
 # Remove special characters, keep only letters, numbers, and spaces
 grouped_items["query_norm"] = (grouped_items["query"].astype(str)  # ensure string
