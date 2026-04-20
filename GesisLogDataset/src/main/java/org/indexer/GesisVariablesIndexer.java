@@ -343,20 +343,20 @@ public class GesisVariablesIndexer {
         }
     }
     
-    public static void main(String[] args) throws IOException, FileNotFoundException, NullPointerException, ParseException {
+    public static void main(String[] args) throws IOException, FileNotFoundException, ParseException {
 
-        String INDEX_PATH = "/Volumes/SD_SSD/Suchana/index/GESIS/variables/";
-        String INPUT_PATH = "/Volumes/SD_SSD/Suchana/collection/GESIS/gesis_log_per_category_v2/variables/variables_merged.json";
-                
+        if (args.length != 2) {
+            System.err.println("Usage mvn exec:java -Dexec.mainClass=\"your.package.MainClass\" -Dexec.args=\"/path/to/index /path/to/input.json\"");
+            System.exit(1);
+        }
+
+        String INDEX_PATH = args[0];
+        String INPUT_PATH = args[1];
+
         GesisVariablesIndexer indexer = new GesisVariablesIndexer(INPUT_PATH, INDEX_PATH);
         indexer.indexAll(INPUT_PATH);
-        indexWriter.close();
-        // indexer.delete();
 
-        // IndexReader indexReader;
-        // indexReader = DirectoryReader.open(FSDirectory.open(new File(INDEX_PATH).toPath()));
-        // showDocumentVector(0, indexReader, "plot");
-
+        indexWriter.close();  // make sure this is correctly initialized
     }
     
     public void delete() throws IOException {

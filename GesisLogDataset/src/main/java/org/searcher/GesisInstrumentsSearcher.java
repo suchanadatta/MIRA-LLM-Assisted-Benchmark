@@ -349,12 +349,15 @@ public class GesisInstrumentsSearcher {
 
     public static void main(String[] args) throws IOException, ParseException, org.apache.lucene.queryparser.classic.ParseException {
 
-        String prompt = "arguments:\n\t1. indexPath\n\t2. queryPath\n\t3. resPath";
-        String indexPath = "/Volumes/SD_SSD/Suchana/index/GESIS/instruments_tools/";
-//        String queryPath = "/Users/suchana/python_projects/victeur/LLM-based-relevance-judgement/output/queries_with_4_itemtypes_resaved.tsv";
-        String queryPath = "/Users/suchana/python_projects/victeur/LLM-based-relevance-judgement/query_narr_desc/new/new_query_set_desc_translated.tsv";
-        String resPath = "/Users/suchana/NetBeansProjects/GesisLogDataset/output/new/instruments_top100_bm25_desc.res";
-        
+        if (args.length != 3) {
+            System.err.println("Usage: mvn exec:java -Dexec.mainClass=\"your.package.MainClass\" -Dexec.args=\"<indexPath> <queryPath> <resPath>\"");
+            System.exit(1);
+        }
+
+        String indexPath = args[0];
+        String queryPath = args[1];
+        String resPath = args[2];
+
         GesisInstrumentsSearcher searcher = new GesisInstrumentsSearcher(indexPath, queryPath, resPath);
         searcher.search();
     }
