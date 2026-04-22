@@ -7,10 +7,8 @@ MIRA dataset directly confronts this challenge by providing a unified framework 
 ## Metadata Export
 The collection contains metadata on `7,634` research datasets; `206,434` high-quality metadata variables; `604` instruments & tools; and `254,097` publications with a total of `468,769` documents, provided as a set of JSON files.
 
-- **Metadata** : Download [metadata](https://drive.google.com/file/d/1jTTYd83bYTqeMB2DR4DSOWQQuYl4y_Sa/view?usp=drive_link) here.
-   
-- **Lucene Index** : The [Lucene (version 8)](https://drive.google.com/file/d/1i8U389G4wSj7dMz41xehKQvvBryZuIs-/view?usp=drive_link) index of the metadata can be accessed here.
-  
+- **Metadata** and **Lucene Index** can be found in Zenodo under DOI [10.5281/zenodo.19660347](https://doi.org/10.5281/zenodo.19660347) 
+
 - **Licence** : Check out the [licence information](license.txt) here.
 
 
